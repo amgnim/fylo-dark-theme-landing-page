@@ -1,0 +1,67 @@
+/* Sign up  */
+
+.signup {
+  &__card {
+    background: $dark-blue-intro-bg;
+    padding: rem(40px) rem(28px);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+    border-radius: 9px;
+    position: relative;
+    top: rem(160px);
+
+    @include breakpoint(medium) {
+      padding: rem(42px) rem(77px);
+      max-width: rem(860px);
+      margin: 0 auto rem(53px) auto;
+      top: rem(180px);
+    }
+  }
+
+  &__title {
+    font-size: rem(18px);
+    margin-bottom: rem(16px);
+
+    @include breakpoint(large) {
+      font-size: rem(32px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(32px);
+  }
+
+  &__form {
+    @include breakpoint(large) {
+      display: flex;
+    }
+  }
+
+  input[type='email'] {
+    font-size: rem(10px);
+    width: 100%;
+    border-radius: rem(28px);
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    padding: rem(16px) rem(30px);
+    margin-bottom: rem(24px);
+    outline: none;
+    color: $dark-blue-intro-bg;
+
+    @include breakpoint(large) {
+      margin-bottom: 0;
+    }
+  }
+
+  input::placeholder {
+    color: #c0c0c0;
+  }
+
+  &__btn {
+    width: 100%;
+
+    @include breakpoint(large) {
+      width: 40%;
+      margin-left: rem(30px);
+      cursor: pointer;
+    }
+  }
+}

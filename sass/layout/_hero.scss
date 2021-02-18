@@ -1,0 +1,61 @@
+/* Hero section */
+
+.hero {
+  background: url('../images/bg-curvy-mobile.svg') $dark-blue-intro-bg;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+
+  @include breakpoint(large) {
+    background: url('../images/bg-curvy-desktop.svg') $dark-blue-intro-bg;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+  }
+
+  .container {
+    padding-bottom: rem(120px);
+
+    @include breakpoint(large) {
+      padding-bottom: rem(158px);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: rem(33px);
+
+    @include breakpoint(medium) {
+      width: rem(720px);
+      height: rem(534px);
+      margin-bottom: rem(36px);
+    }
+  }
+
+  &__title {
+    font-size: rem(24px);
+    line-height: 1.5;
+    margin-bottom: rem(15px);
+    max-width: 450px;
+
+    @include breakpoint(large) {
+      max-width: rem(734px);
+      font-size: rem(40px);
+      margin-bottom: rem(32px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(32px);
+    max-width: 500px;
+
+    @include breakpoint(large) {
+      font-size: rem(20px);
+      max-width: rem(589px);
+    }
+  }
+
+  &__btn {
+    width: rem(240px);
+  }
+}

@@ -1,0 +1,49 @@
+/* Features Section */
+
+.features {
+  .container {
+    padding-bottom: rem(160px);
+
+    @include breakpoint(large) {
+      padding-bottom: rem(138px);
+    }
+  }
+  .grid {
+    @include breakpoint(medium) {
+      max-width: 880px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px 150px;
+      place-items: baseline;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(80px);
+    }
+
+    @include breakpoint(medium) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon {
+    margin-bottom: rem(24px);
+    width: 80px;
+
+    @include breakpoint(large) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  &__title {
+    font-size: rem(18px);
+    margin-bottom: rem(8px);
+
+    @include breakpoint(large) {
+      font-size: rem(20px);
+    }
+  }
+}

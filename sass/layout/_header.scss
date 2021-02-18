@@ -1,0 +1,50 @@
+/* Header Section */
+
+.header {
+  background-color: $dark-blue-intro-bg;
+
+  .container {
+    padding-bottom: rem(48px);
+
+    @include breakpoint(large) {
+      padding-bottom: rem(75px);
+    }
+  }
+
+  &__logo {
+    width: rem(80px);
+    height: rem(24px);
+
+    @include breakpoint(large) {
+      width: rem(176px);
+      height: rem(54px);
+    }
+  }
+
+  &__nav {
+    .list {
+      display: flex;
+    }
+
+    .list-item {
+      font-size: rem(14px);
+
+      &:not(:last-child) {
+        margin-right: rem(24px);
+      }
+
+      @include breakpoint(medium) {
+        font-size: rem(16px);
+
+        &:not(:last-child) {
+          margin-right: rem(57px);
+        }
+      }
+
+      &:hover {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+// SCSS Functions
+
+// Function to convert px to rem
+@function rem($pixels, $context: $base-font-size) {
+  @return ($pixels / $context) * 1rem;
+}

@@ -1,0 +1,97 @@
+/* About Section */
+
+.about {
+  .container {
+    padding-bottom: rem(160px);
+
+    @include breakpoint(large) {
+      padding-bottom: rem(180px);
+    }
+  }
+
+  .flex {
+    flex-direction: column;
+
+    @include breakpoint(large) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: rem(48px);
+
+    @include breakpoint(medium) {
+      width: rem(615px);
+    }
+    @include breakpoint(large) {
+      // width: rem(615px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    @include breakpoint(medium) {
+      max-width: rem(498px);
+      margin-left: 2rem;
+    }
+  }
+  &__title {
+    font-size: rem(18px);
+    margin-bottom: rem(16px);
+
+    @include breakpoint(large) {
+      font-size: rem(40px);
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(16px);
+
+    @include breakpoint(large) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__link {
+    font-size: rem(12px);
+    color: $cyan;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: rem(130px);
+      height: 1px;
+      bottom: -4px;
+      background-color: $cyan;
+    }
+
+    svg {
+      margin-left: 7px;
+    }
+
+    @include breakpoint(large) {
+      font-size: rem(16px);
+
+      &::before {
+        width: rem(166px);
+      }
+
+      &:hover {
+        color: $white;
+
+        svg use {
+          fill: $white;
+        }
+
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

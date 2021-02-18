@@ -1,0 +1,29 @@
+// Primary Colors
+//---------------------------------------
+$dark-blue-intro-bg: hsl(217, 27%, 15%); //intro & email sign up background
+$dark-blue-main-bg: hsl(217, 27%, 13%); //main background
+$dark-blue-footer-bg: hsl(215, 52%, 9%); //footer background
+$dark-blue-testimonials-bg: hsl(219, 30%, 18%); //testimonials background
+
+// Accent Colors
+//--------------------------
+$cyan: hsl(176, 68%, 64%); //inside call-to-action gradient
+$blue: rgb(51, 158, 204); //inside call-to-action gradient
+$light-red: hsl(0, 100%, 63%); //error
+
+// Neutral Colors
+//-------------------------
+$white: hsl(0, 0%, 100%);
+
+// Body copy font size
+//---------------------
+$font-body-size: 14px;
+$base-font-size: 16px; //Default font-size
+
+// Headings, Call-to-actions, Header Navigation font-family
+//--------------------------------------------------------
+$font-headings: 'Raleway', sans-serif;
+
+// Body copy font-family
+//----------------------------------
+$font-body: 'Open Sans', sans-serif;

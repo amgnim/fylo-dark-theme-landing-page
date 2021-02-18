@@ -1,0 +1,16 @@
+/* Buttons */
+.o-btn {
+  color: $white;
+  font-weight: 700;
+  display: inline-block;
+  padding: rem(16px);
+  border-radius: rem(28px);
+  background: linear-gradient(132.02deg, #63e1d9 -31.85%, #34a0cd 100%);
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+
+  @include breakpoint(large) {
+    &:hover {
+      background: #8adae3;
+    }
+  }
+}

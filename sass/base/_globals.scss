@@ -1,0 +1,69 @@
+/* Global styles*/
+body {
+  font-family: $font-body;
+  font-size: $font-body-size;
+  font-weight: 400;
+  color: $white;
+  line-height: 1.5;
+  background: $dark-blue-main-bg;
+}
+
+h1,
+h2 {
+  font-family: $font-headings;
+  font-weight: 700;
+}
+
+a {
+  color: $white;
+}
+
+.container {
+  margin: 0 auto;
+
+  @include breakpoint(medium) {
+    max-width: 80rem;
+  }
+
+  &--padding-x {
+    padding: 0 rem(30px);
+  }
+
+  &--padding-top {
+    padding-top: rem(24px);
+
+    @include breakpoint(large) {
+      padding-top: rem(73px);
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}

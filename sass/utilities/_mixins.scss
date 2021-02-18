@@ -1,0 +1,22 @@
+// Flexbox styles
+@mixin flex($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// Breakpoints
+
+// larger than 640px, 1024px, 1400px
+$breakpoint: (
+  'medium': '40rem',
+  'large': '64rem',
+  'xlarge': '87.5rem',
+);
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: map-get($breakpoint , $size )) {
+    @content;
+  }
+}
